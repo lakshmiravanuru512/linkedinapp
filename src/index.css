@@ -1,7 +1,121 @@
+/* $linkedinBlue:#0072b1; */
+
+
+.center{
+text-align: center;
+}
+
 .button{
     width: 200px;
-    height: 30px;
+    height: 35px;
     cursor: pointer;
     background-color: blue;
     color: white;
+    width: 250px;
+    border-radius:20px;
+    background-color:#0072b1;
+    border: none;
+    margin-top: 20px;
+
+}
+
+.button:hover{
+    background-color: blue;
+}
+.linkedinLogo{
+    width: 40px;
+
+  }
+  .heading{
+    margin-left: 500px;
+    margin-top: 100px;
+    font-family: system-ui;
+    font-weight: 500;
+    color: rgba(0,0,0,0.9);
+  }
+  .subHeading{
+    margin-left: 500px;
+    margin-top: -20px;
+    font-family: system-ui;
+    
+  }
+  .auth-input{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-left: 500px;
+  }
+  .common-input{
+    height: 30px;
+    border-radius: 4px;
+    font-family: system-ui;
+    margin:5px 0px;
+    outline: none;
+    border: 1px solid #212121;
+    color: #212121;
+    font-family: system-ui;
+  }
+  .common-input:focus{
+    outline: 1px solid blue;
+  }
+
+  ::placeholder{
+    font-family: system-ui;
+  }
+  .hr-text {
+    line-height: 0.5em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+    &:before {
+      content: '';
+    
+      background: linear-gradient(to right, transparent, #818078, transparent);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 90%;
+      height: 1px;
+     
+
+    }
+    &:after {
+      content: attr(data-content);
+      position: relative;
+      display: inline-block;
+      color: black;
+  
+      padding: 0 .5em;
+      line-height: 1.5em;
+
+      color: #818078;
+      background-color: #fcfcfa;
+    }
+  }
+.google-btn-container{
+    margin-left: 500px;
+}
+.google-btn{
+    width: 250px !important;
+}
+.sign-up{
+    margin-left: 50px;
+    font-family: system-ui;
+}
+
+.join-now{
+    color: #0072b1;
+    cursor: pointer;
+}
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px;
 }

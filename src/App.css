@@ -2,4 +2,18 @@
   text-align: center;
   color: black;
   background-color: rgba(255,255,255,0.87);
+
+}
+input{
+  
+    height: 20px;
+    padding: 10px;
+    background-color: white;
+    outline: none;
+    border: 1px solid #212121;
+    color: #212121;
+    border-radius: 3px;
+    font-family: system-ui;
+    font-size: 16px;
+  
 }
