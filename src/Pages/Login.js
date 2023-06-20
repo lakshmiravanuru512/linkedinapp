@@ -10,7 +10,8 @@ export const Login = () => {
   const navigate=useNavigate();
   useEffect(()=>{
     onAuthStateChanged(auth, (res)=>{
-       if(res?.accessToken){
+       if(!res?.accessToken){
+
         navigate("/home")
        }else{
         setLoading(false);

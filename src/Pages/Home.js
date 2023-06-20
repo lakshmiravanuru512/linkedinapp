@@ -18,6 +18,6 @@ export const Home = () => {
         })
     },[])
   return (
-   !loading? <Loader/> : <HomeComponent/>
+   loading? <Loader/> : <HomeComponent/>
   )
 }   
