@@ -14,6 +14,8 @@ import { useNavigate } from "react-router-dom";
         try{let result=await RegisterAPI(credentials.email,credentials.password);
             toast.success("Account Created");
             navigate("/home");
+            
+            localStorage.setItem("userEmail", login.user.email);
         }catch(err){
                  toast.error("Cannot create your account")
              }

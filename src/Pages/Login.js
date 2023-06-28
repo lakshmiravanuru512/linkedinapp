@@ -6,18 +6,18 @@ import { auth } from '../firebaseConfig';
 import { Loader } from '../Components/common/Loader';
 
 export const Login = () => {
-  const [loading, setLoading]=useState(true);
+  const [loading, setLoading]=useState(false);
   const navigate=useNavigate();
-  useEffect(()=>{
-    onAuthStateChanged(auth, (res)=>{
-       if(!res?.accessToken){
+//   useEffect(()=>{
+//     onAuthStateChanged(auth, (res)=>{
+//        if(!res?.accessToken){
 
-        navigate("/home")
-       }else{
-        setLoading(false);
-       }
-    })
-},[])
+//         navigate("/home")
+//        }else{
+//         setLoading(false);
+//        }
+//     })
+// },[])
   return (
     loading?<Loader/> : <LoginComponent/>
   )

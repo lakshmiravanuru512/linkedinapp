@@ -14,6 +14,7 @@ import { useNavigate } from "react-router-dom";
         try{let result=await LoginAPI(credentials.email,credentials.password);
             toast.success("Signed In to the Linkedin");
             navigate("/home");
+             localStorage.setItem("userEmail", login.user.email);
         }catch(err){
                  toast.error("Please Check Your emailid or password")
              }
